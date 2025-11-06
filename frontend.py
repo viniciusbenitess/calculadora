@@ -8,7 +8,7 @@ class CalculadoraGUI:
         master.title("Calculadora Científica Python")
         master.resizable(False, False)
 
-        # 1. Instância do Back-End
+        # 1. Instância do Back
         self.calculadora = CalculadoraCientifica()
         
         # Variável para armazenar a expressão atual
@@ -39,11 +39,11 @@ class CalculadoraGUI:
     def criar_botoes(self):
         # Definição dos botões: (texto, linha, coluna, cor_fundo)
         botoes = [
-            ('C', 1, 0, '#E57373'), ('%', 1, 1, '#FFB74D'), ('√', 1, 2, '#FFB74D'), ('/', 1, 3, '#FFA000'),
-            ('sen', 2, 0, '#ADD8E6'), ('cos', 2, 1, '#ADD8E6'), ('tan', 2, 2, '#ADD8E6'), ('x', 2, 3, '#FFA000'),
+            ('C', 1, 0, "#E64949"), ('%', 1, 1, '#FFB74D'), ('√', 1, 2, '#FFB74D'), ('/', 1, 3, '#FFA000'),
+            ('sen', 2, 0, '#499EBB'), ('cos', 2, 1, '#499EBB'), ('tan', 2, 2, "#499EBB"), ('x', 2, 3, '#FFA000'),
             ('7', 3, 0, '#FFFFFF'), ('8', 3, 1, '#FFFFFF'), ('9', 3, 2, '#FFFFFF'), ('-', 3, 3, '#FFA000'),
             ('4', 4, 0, '#FFFFFF'), ('5', 4, 1, '#FFFFFF'), ('6', 4, 2, '#FFFFFF'), ('+', 4, 3, '#FFA000'),
-            ('1', 5, 0, '#FFFFFF'), ('2', 5, 1, '#FFFFFF'), ('3', 5, 2, '#FFFFFF'), ('=', 5, 3, '#4CAF50'),
+            ('1', 5, 0, '#FFFFFF'), ('2', 5, 1, '#FFFFFF'), ('3', 5, 2, '#FFFFFF'), ('=', 5, 3, "#1EA122"),
             ('0', 6, 0, '#FFFFFF'), ('.', 6, 1, '#FFFFFF'), ('+/-', 6, 2, '#9E9E9E'), ('<-', 6, 3, '#9E9E9E') 
         ]
         

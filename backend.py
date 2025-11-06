@@ -4,10 +4,6 @@ class CalculadoraCientifica:
     # Classe responsável por todas as operações matemáticas (Back-End).
     
     def calcular_simples(self, expressao):
-        """
-        Calcula expressões simples (soma, subtração, multiplicação, divisão).
-        Usa eval() com segurança para avaliar a expressão matemática.
-        """
         try:
             # Substitui 'x' por '*' para multiplicação 
             expressao = expressao.replace('x', '*')
@@ -26,7 +22,6 @@ class CalculadoraCientifica:
             return "Erro: Expressão Inválida"
 
     def raiz_quadrada(self, numero):
-        """Calcula a raiz quadrada de um número."""
         try:
             numero = float(numero)
             if numero < 0:
@@ -54,15 +49,13 @@ class CalculadoraCientifica:
                     return "Erro: Tangente indefinida"
                 return math.tan(radianos)
             else:
-                return "Erro: Função Trigonométrica desconhecida"
+                return "Erro"
 
         except ValueError:
             return "Erro: Entrada inválida"
             
     def porcentagem_de(self, valor, percentual):
-        
         #Calcula a porcentagem de um valor. Ex: 50% de 200.
-       
         try:
             v = float(valor)
             p = float(percentual)
