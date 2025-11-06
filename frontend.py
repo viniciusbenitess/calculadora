@@ -44,7 +44,6 @@ class CalculadoraGUI:
             ('7', 3, 0, '#FFFFFF'), ('8', 3, 1, '#FFFFFF'), ('9', 3, 2, '#FFFFFF'), ('-', 3, 3, '#FFA000'),
             ('4', 4, 0, '#FFFFFF'), ('5', 4, 1, '#FFFFFF'), ('6', 4, 2, '#FFFFFF'), ('+', 4, 3, '#FFA000'),
             ('1', 5, 0, '#FFFFFF'), ('2', 5, 1, '#FFFFFF'), ('3', 5, 2, '#FFFFFF'), ('=', 5, 3, '#4CAF50'),
-            # Linha 6 corrigida para ter 4 botões de tamanho igual
             ('0', 6, 0, '#FFFFFF'), ('.', 6, 1, '#FFFFFF'), ('+/-', 6, 2, '#9E9E9E'), ('<-', 6, 3, '#9E9E9E') 
         ]
         
