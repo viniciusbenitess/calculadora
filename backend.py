@@ -1,22 +1,19 @@
 import math
 
 class CalculadoraCientifica:
-    """
-    Classe responsável por todas as operações matemáticas (Back-End).
-    """
-
+    # Classe responsável por todas as operações matemáticas (Back-End).
+    
     def calcular_simples(self, expressao):
         """
         Calcula expressões simples (soma, subtração, multiplicação, divisão).
         Usa eval() com segurança para avaliar a expressão matemática.
         """
         try:
-            # Substitui 'x' por '*' para multiplicação (convenção da GUI)
+            # Substitui 'x' por '*' para multiplicação 
             expressao = expressao.replace('x', '*')
             
             # Trata porcentagem: 50% de 200 => (200 / 100) * 50
             if '%' in expressao:
-                # Simplificação: trata apenas o cálculo percentual de um valor
                 pass 
 
             # Usa a função eval() para processar a string da expressão
@@ -39,10 +36,9 @@ class CalculadoraCientifica:
             return "Erro: Entrada inválida"
 
     def calcular_trigonometrica(self, funcao, numero_graus):
-        """
-        Calcula seno, cosseno ou tangente.
-        Recebe o ângulo em graus e converte para radianos.
-        """
+        #Calcula seno, cosseno ou tangente.
+        #Recebe o ângulo em graus e converte para radianos.
+
         try:
             numero = float(numero_graus)
             # Converte graus para radianos, pois as funções math.sin/cos/tan usam radianos
@@ -64,9 +60,9 @@ class CalculadoraCientifica:
             return "Erro: Entrada inválida"
             
     def porcentagem_de(self, valor, percentual):
-        """
-        Calcula a porcentagem de um valor. Ex: 50% de 200.
-        """
+        
+        #Calcula a porcentagem de um valor. Ex: 50% de 200.
+       
         try:
             v = float(valor)
             p = float(percentual)
